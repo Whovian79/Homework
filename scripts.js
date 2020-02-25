@@ -18,3 +18,12 @@ for (let i = 1; i <= 100; i++) {
 
   i += 1;
 }
+// Confirm attempt
+const age = {};
+
+if (age >= 21) confirm("Are you really 21 or older?");
+{
+  open("index.html", "Welcome!");
+} else (age <= 21); {
+  open("exit.html, Sorry, please come back when are 21!");
+}
