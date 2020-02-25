@@ -1,17 +1,20 @@
-//Homework for 5 Feb 2020
+//Fizz Buzz
+//Log the numbers from 1 to 100.
+//If the number is divisible by 3 and 5, log "FizzBuzz!"
+//However, if the number is divisible by 3, log 'Fizz!'
+//If the number is divisible by 5, log "Buzz!"
+//Each number should only result in 1 log.
 
-const renter = {
-  name: "Dora",
-  age: 19,
-  DOB: "12 June 1999",
-  occupation: "Explorer",
-  pets: {
-    monkey: "Boots"
-  },
-  unit: "15 Q"
-};
-console.log(renter.name);
+for (let i = 1; i <= 100; i++) {
+  if (!(i % 3) && !(i % 5)) {
+    console.log("FizzBuzz!");
+  } else if (!(i % 3)) {
+    console.log("Fizz!");
+  } else if (!(i % 5)) {
+    console.log("Buzz!");
+  } else {
+    console.log(i);
+  }
 
-//We jumped into the future and it is now Dora's birthday
-
-renter.age = 23;
+  i += 1;
+}
